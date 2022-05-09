@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="grid-container"></div>
+    <h1 id="title">Etch a sketch</h1>
+    <div class="buttons">
+        <button class="color-choice"></button>
+        <button class="color-choice"></button>
+        <button class="color-choice"></button>
+    </div>
+    <div id="grid-wrapper">
+        <div id="grid-container"></div>
+    </div>
+    <div class="grid-settings">
+        <button class="clear">Clear</button>
+        <div class="size-container">
+            <p>pixel size</p>
+            <input type="range" min="4" max="64" value="15" id="sizeRange" class="slider">
+        </div>
+    </div>
 </body>
 </html>

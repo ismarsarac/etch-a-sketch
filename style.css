@@ -1,14 +1,27 @@
 :root{
-    --grid-cols:1;
-    --grid-rows:1;
+    --content-width:400px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 #grid-container{
     display: grid;
-    grid-gap:1em;
-    grid-template-rows: repeat(var(--grid-rows),1fr);
-    grid-template-columns: repeat(var(--grid-cols),1fr);
-    height: 600px;
-    width: 600px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+}
+#grid-wrapper{
+    height: 75vw;
+    width: 75vw;
+    max-height: var(--content-width);
+    max-width: var(--content-width);
+    margin: 30px auto;
+    position: relative;
 }
 
 .grid-item{
